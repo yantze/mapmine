@@ -12,7 +12,18 @@
 		3C5AE1681F6CCCA1002DDC4D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C5AE1661F6CCCA1002DDC4D /* Main.storyboard */; };
 		3C5AE16A1F6CCCA1002DDC4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C5AE1691F6CCCA1002DDC4D /* Assets.xcassets */; };
 		3C5AE16D1F6CCCA1002DDC4D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C5AE16B1F6CCCA1002DDC4D /* LaunchScreen.storyboard */; };
+		3C71E5CE1F779F570031DC76 /* mapmineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C71E5CD1F779F570031DC76 /* mapmineTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3C71E5D01F779F570031DC76 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3C5AE1571F6CCCA1002DDC4D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3C5AE15E1F6CCCA1002DDC4D;
+			remoteInfo = mapmine;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		3C5AE15F1F6CCCA1002DDC4D /* mapmine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mapmine.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,10 +33,20 @@
 		3C5AE1691F6CCCA1002DDC4D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3C5AE16C1F6CCCA1002DDC4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3C5AE16E1F6CCCA1002DDC4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C71E5CB1F779F570031DC76 /* mapmineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mapmineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C71E5CD1F779F570031DC76 /* mapmineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapmineTests.swift; sourceTree = "<group>"; };
+		3C71E5CF1F779F570031DC76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		3C5AE15C1F6CCCA1002DDC4D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C71E5C81F779F570031DC76 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,6 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				3C5AE1611F6CCCA1002DDC4D /* mapmine */,
+				3C71E5CC1F779F570031DC76 /* mapmineTests */,
 				3C5AE1601F6CCCA1002DDC4D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				3C5AE15F1F6CCCA1002DDC4D /* mapmine.app */,
+				3C71E5CB1F779F570031DC76 /* mapmineTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -62,6 +85,15 @@
 				3C5AE16E1F6CCCA1002DDC4D /* Info.plist */,
 			);
 			path = mapmine;
+			sourceTree = "<group>";
+		};
+		3C71E5CC1F779F570031DC76 /* mapmineTests */ = {
+			isa = PBXGroup;
+			children = (
+				3C71E5CD1F779F570031DC76 /* mapmineTests.swift */,
+				3C71E5CF1F779F570031DC76 /* Info.plist */,
+			);
+			path = mapmineTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,6 +116,24 @@
 			productReference = 3C5AE15F1F6CCCA1002DDC4D /* mapmine.app */;
 			productType = "com.apple.product-type.application";
 		};
+		3C71E5CA1F779F570031DC76 /* mapmineTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C71E5D41F779F570031DC76 /* Build configuration list for PBXNativeTarget "mapmineTests" */;
+			buildPhases = (
+				3C71E5C71F779F570031DC76 /* Sources */,
+				3C71E5C81F779F570031DC76 /* Frameworks */,
+				3C71E5C91F779F570031DC76 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3C71E5D11F779F570031DC76 /* PBXTargetDependency */,
+			);
+			name = mapmineTests;
+			productName = mapmineTests;
+			productReference = 3C71E5CB1F779F570031DC76 /* mapmineTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -97,6 +147,11 @@
 					3C5AE15E1F6CCCA1002DDC4D = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
+					};
+					3C71E5CA1F779F570031DC76 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3C5AE15E1F6CCCA1002DDC4D;
 					};
 				};
 			};
@@ -114,6 +169,7 @@
 			projectRoot = "";
 			targets = (
 				3C5AE15E1F6CCCA1002DDC4D /* mapmine */,
+				3C71E5CA1F779F570031DC76 /* mapmineTests */,
 			);
 		};
 /* End PBXProject section */
@@ -129,6 +185,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3C71E5C91F779F570031DC76 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -141,7 +204,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3C71E5C71F779F570031DC76 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C71E5CE1F779F570031DC76 /* mapmineTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3C71E5D11F779F570031DC76 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3C5AE15E1F6CCCA1002DDC4D /* mapmine */;
+			targetProxy = 3C71E5D01F779F570031DC76 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		3C5AE1661F6CCCA1002DDC4D /* Main.storyboard */ = {
@@ -300,6 +379,38 @@
 			};
 			name = Release;
 		};
+		3C71E5D21F779F570031DC76 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UXPT6T37M7;
+				INFOPLIST_FILE = mapmineTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vastiny.mapmine.mapmineTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mapmine.app/mapmine";
+			};
+			name = Debug;
+		};
+		3C71E5D31F779F570031DC76 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UXPT6T37M7;
+				INFOPLIST_FILE = mapmineTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vastiny.mapmine.mapmineTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mapmine.app/mapmine";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -317,6 +428,15 @@
 			buildConfigurations = (
 				3C5AE1721F6CCCA1002DDC4D /* Debug */,
 				3C5AE1731F6CCCA1002DDC4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C71E5D41F779F570031DC76 /* Build configuration list for PBXNativeTarget "mapmineTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C71E5D21F779F570031DC76 /* Debug */,
+				3C71E5D31F779F570031DC76 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
